@@ -1,0 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+# Author: Manoj Kumar Paladugu <paladugumanojkumar@gmail.com>
+
+if BOARD_NUCLEO_G491RE
+
+config SPI_STM32_INTERRUPT
+	default y
+	depends on SPI
+
+endif # BOARD_NUCLEO_G491RE
